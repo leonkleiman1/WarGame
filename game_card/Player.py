@@ -20,9 +20,11 @@ class Player:
         for card in range(self.num):
             self.cards_player.append(deck.deal_one())
 
-    # method that get card from player deck
+    # method that get card from player deck from the index 0
     def get_card(self):
-        return self.cards_player.pop()
+        card = self.cards_player[0]
+        self.cards_player.remove(card)
+        return card
 
     # method that add card to player deck
     def add_card(self, card: Card):

@@ -16,7 +16,7 @@ class Card:
 
     # check if value of this card equal to value of card2
     def __eq__(self, card2):
-        if self.value == card2.value:
+        if self.value == card2.value and self.suit == card2.suit:
             return True
         else:
             return False
@@ -44,9 +44,9 @@ class Card:
         # dictionary for value of suit
         dict_suite = {1: "Diamond", 2: "Spade", 3: "Heart", 4: "Club"}
         if 1 < self.value < 11:
-            return f'Value: {self.value}, Suite:{dict_suite[self.suit]}'
+            return f'{self.value} of {dict_suite[self.suit]}'
         else:
-            return f'Value: {dict_value[self.value]}, Suite: {dict_suite[self.suit]}'
+            return f'{dict_value[self.value]} of {dict_suite[self.suit]}'
 
     # return the information of card
     def __repr__(self):
