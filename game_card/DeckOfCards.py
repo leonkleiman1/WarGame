@@ -25,3 +25,7 @@ class DeckOfCards:
         card_return = self.deck[random.randint(1, len(self.deck))]
         self.deck.remove(card_return)
         return card_return
+
+    # return the deck
+    def __str__(self):
+        return self.deck
