@@ -23,14 +23,12 @@ for i in range(10):
     if card_p1 > card_p2:
         manager_game.p1.add_card(card_p1)
         manager_game.p1.add_card(card_p2)
+        print(f"# The winner in this round is: {name_p1} #")
     else:
         manager_game.p2.add_card(card_p2)
         manager_game.p2.add_card(card_p1)
-    # print the winner in this round or tie
-    if manager_game.get_winner() is None:
-        print("-Tie-")
-    else:
-        print(f"# The winner in this round is: {manager_game.get_winner().name} #")
+        print(f"# The winner in this round is: {name_p2} #")
+
 
 # print the winner of the game, or if we have tie print tie
 print("===The End===")
@@ -39,5 +37,3 @@ if manager_game.get_winner() is None:
 else:
     print(f"The winner of the game is...")
     print(manager_game.get_winner())
-
-
