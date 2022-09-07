@@ -4,10 +4,11 @@ import random
 
 
 class DeckOfCards:
+    """object that create a deck of cards and is able to perform actions on it"""
 
     def __init__(self):
+        self.deck = []  # empty deck of cards
         # create a deck
-        self.deck = []
         for value in range(1, 14):
             for suite in range(1, 5):
                 new_card = Card(value, suite)
