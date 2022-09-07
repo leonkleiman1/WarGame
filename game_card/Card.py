@@ -4,6 +4,9 @@ class Card:
 
     # create card with value and suit for card
     def __init__(self, _value, _suit):
+        # check if the type of value or suit not int
+        if type(_value) != int or type(_suit) != int:
+            raise TypeError("The type of argument is wrong!!!")
         # check if suite between 1-4
         if _suit > 4 or _suit < 1:
             raise ValueError("the argument must be between 1-4!!!")
@@ -21,6 +24,7 @@ class Card:
         else:
             return False
 
+    # check which card is greater, if the value equal, according to the suit
     def __gt__(self, card2):
         # check if card is ace
         if self.value == 1 and card2.value != 1:
@@ -31,7 +35,7 @@ class Card:
         if self.value > card2.value:
             return True
         elif self.value == card2.value:
-            if self.suit < card2.suit:
+            if self.suit > card2.suit:
                 return True
             else:
                 return False
