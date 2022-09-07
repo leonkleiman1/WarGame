@@ -7,6 +7,8 @@ class CardGame:
     """holds information about the deck """
 
     def __init__(self, _name_p1, _name_p2, _num_per_player=26):
+        if type(_num_per_player) != int:
+            raise TypeError("The argument must be integer!!!")
         # check if num_per_player between 10-26, if not change to 26
         if _num_per_player < 10 or _num_per_player > 26:
             _num_per_player = 26
