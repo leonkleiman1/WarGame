@@ -30,7 +30,7 @@ for i in range(10):
         print(f"# The winner in this round is: {name_p2} #")
 
 
-# print the winner of the game, or if we have tie print tie
+# print the winner of the game, or if we have None print tie
 print("===The End===")
 if manager_game.get_winner() is None:
     print("The result is Tie")
