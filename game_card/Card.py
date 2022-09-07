@@ -2,9 +2,12 @@ class Card:
 
     # get value and suit for card
     # value and suit for card
-    def __init__(self, value, suit):
-        self.value = value
-        self.suit = suit
+    def __init__(self, _value, _suit):
+        if _suit > 4 or _suit < 1:
+            raise ValueError("suit must be between 1-4")
+
+        self.value = _value
+        self.suit = _suit
 
     # check if value of card1 equal to value of card2
     def __eq__(self, card2):
@@ -30,4 +33,19 @@ class Card:
         return False
 
     def __str__(self):
-        pass
+        #dict for card with special type
+        dict_value = {1: "ace", 11: "jack", 12: "queen", 13: "king"}
+        #dict for value of suit
+        dict_suite = {1: "Diamond", 2: "Spade", 3: "Heart", 4: "Club"}
+        if 1 < self.value < 11:
+            return f'Value: {self.value}, Suite:{dict_suite[self.suit]}'
+        else:
+            return f'Value: {dict_value[self.value]}, Suite: {dict_suite[self.suit]}'
+
+    def __repr__(self):
+        dict_value = {1: "ace", 11: "jack", 12: "queen", 13: "king"}
+        dict_suite = {1: "Diamond", 2: "Spade", 3: "Heart", 4: "Club"}
+        if 1 < self.value < 11:
+            return f'{self.value},  {dict_suite[self.suit]}'
+        else:
+            return f'{dict_value[self.value]},  {dict_suite[self.suit]}'
