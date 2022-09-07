@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67549faa-6727-4ea1-ba89-d1d7d3751725" name="Changes" comment="dane create player object">
-      <change beforePath="$PROJECT_DIR$/.idea/WarGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WarGame.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="67549faa-6727-4ea1-ba89-d1d7d3751725" name="Changes" comment="done to create CardGame.py object">
+      <change afterPath="$PROJECT_DIR$/game_card/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_card/CardGame.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_card/CardGame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +36,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\Desktop\QA Course\PythonProjects\WarGame\game_card" />
+      <recent name="C:\Users\DELL\Desktop\QA Course\PythonProjects\WarGame" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.CardGame">
+  <component name="RunManager" selected="Python.main (2)">
     <configuration name="Card" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="WarGame" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,7 +132,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="WarGame" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -137,7 +144,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\DELL\Desktop\QA Course\PythonProjects\WarGame\game_card\main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.CardGame" />
         <item itemvalue="Python.DeckOfCards (1)" />
         <item itemvalue="Python.DeckOfCards" />
         <item itemvalue="Python.Card" />
-        <item itemvalue="Python.main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -221,19 +228,14 @@
       <option name="project" value="LOCAL‎" />
       <updated>1662536076457</updated>
     </task>
-    <task id="LOCAL‎00006" summary="card class">
-      <created>1662554832301</created>
-      <option name="number" value="LOCAL‎00006" />
-      <option name="presentableId" value="LOCAL‎00006" />
-      <updated>1662554832301</updated>
+    <task id="LOCAL‎-00006" summary="done to create CardGame.py object">
+      <created>1662540672197</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL‎-00006" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1662540672197</updated>
     </task>
-    <task id="LOCAL‎00007" summary="dane create player object">
-      <created>1662557967439</created>
-      <option name="number" value="LOCAL‎00007" />
-      <option name="presentableId" value="LOCAL‎00007" />
-      <updated>1662557967439</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,8 +253,7 @@
     <MESSAGE value="edit main file" />
     <MESSAGE value="delete all the lines from main file" />
     <MESSAGE value="done to create DeckOfCards.py object" />
-    <MESSAGE value="card class" />
-    <MESSAGE value="dane create player object" />
-    <option name="LAST_COMMIT_MESSAGE" value="dane create player object" />
+    <MESSAGE value="done to create CardGame.py object" />
+    <option name="LAST_COMMIT_MESSAGE" value="done to create CardGame.py object" />
   </component>
 </project>
