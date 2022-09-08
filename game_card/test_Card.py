@@ -9,17 +9,25 @@ class TestCard(TestCase):
 
     # get valid argument
     def test_init_valid(self):
-        self.assertEqual(self.card_object.value, 2)
-        self.assertEqual(self.card_object.suit, 4)
+        card = Card(1, 1)
+        self.assertEqual(card.value, 1)
+        self.assertEqual(card.suit, 1)
+        card = Card(13, 4)
+        self.assertEqual(card.value, 13)
+        self.assertEqual(card.suit, 4)
 
     # get invalid value argument
     def test_init_invalid_value(self):
         # check the value
         with self.assertRaises(ValueError):
+            card = Card(0, 4)
+        with self.assertRaises(ValueError):
             card = Card(-1, 4)
         with self.assertRaises(ValueError):
             card = Card(14, 4)
         # check the suit
+        with self.assertRaises(ValueError):
+            card = Card(1, 0)
         with self.assertRaises(ValueError):
             card = Card(1, -1)
         with self.assertRaises(ValueError):
