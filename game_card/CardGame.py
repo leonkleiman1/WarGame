@@ -31,8 +31,8 @@ class CardGame:
 
     # return the player with the most cards in the hand, if is equal return None
     def get_winner(self):
-        if len(self.p1.list_cards) == len(self.p2.list_cards):
+        if len(self.p1.cards_player) == len(self.p2.cards_player):
             return
-        elif len(self.p1.list_cards) > len(self.p2.list_cards):
+        elif len(self.p1.cards_player) > len(self.p2.cards_player):
             return self.p1
         return self.p2

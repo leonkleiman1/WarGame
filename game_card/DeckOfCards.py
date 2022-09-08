@@ -22,7 +22,7 @@ class DeckOfCards:
     def deal_one(self):
         if len(self.deck) == 0:
             return
-        card_return = self.deck[random.randint(1, len(self.deck))]
+        card_return = random.choice(self.deck)
         self.deck.remove(card_return)
         return card_return
 
