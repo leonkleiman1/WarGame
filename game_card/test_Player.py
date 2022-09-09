@@ -1,4 +1,4 @@
-# Unit Test to Player Object
+# Unit Test for Player Object
 from unittest import TestCase, mock
 from Player import Player
 from Card import Card

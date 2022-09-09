@@ -1,4 +1,4 @@
-# Unit Test to Card Object
+# Unit Test for Card Object
 from unittest import TestCase
 from Card import Card
 
