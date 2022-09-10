@@ -27,13 +27,13 @@ class TestPlayer(TestCase):
 
     # check invalid value num
     def test_init_invalid_value(self):
-        player = Player("Name", 9)  # check 9
+        player = Player("Name", 9)  # check number below 10
         self.assertEqual(player.num, 26)
         self.assertEqual(player.cards_player, [])
         player = Player("Name", -1)  # check negative number
         self.assertEqual(player.num, 26)
         self.assertEqual(player.cards_player, [])
-        player = Player("Name", 27) # check 27
+        player = Player("Name", 27)  # check above 26
         self.assertEqual(player.num, 26)
         self.assertEqual(player.cards_player, [])
 
