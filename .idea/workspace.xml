@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67549faa-6727-4ea1-ba89-d1d7d3751725" name="Changes" comment="after review test_DeckOfCards.py">
-      <change afterPath="$PROJECT_DIR$/game_card/test_CardGame.py" afterDir="false" />
+    <list default="true" id="67549faa-6727-4ea1-ba89-d1d7d3751725" name="Changes" comment="done to make test_Card.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game_card/CardGame.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_card/CardGame.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_card/test_Player.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_card/test_Player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_card/test_CardGame.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_card/test_CardGame.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,20 +35,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "last_opened_file_path": "C:/Users/DELL/Desktop/QA Course/PythonProjects/UnitTest3-master",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
-  }
-}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\DELL\Desktop\QA Course\PythonProjects\WarGame\game_card" />
       <recent name="C:\Users\DELL\Desktop\QA Course\PythonProjects\WarGame" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test_CardGame.py">
-    <configuration name="Python tests for test_CardGame.TestCardGame.test_get_winner_valid_won" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_CardGame.TestCardGame.test_init_invalid_argument_type_p2">
+    <configuration name="Python tests for test_CardGame.TestCardGame.test_init_invalid_argument_type" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="WarGame" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -59,11 +52,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_CardGame.TestCardGame.test_get_winner_valid_won&quot;" />
+      <option name="_new_target" value="&quot;test_CardGame.TestCardGame.test_init_invalid_argument_type&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_Player.TestPlayer.test_get_card_invalid_length" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_CardGame.TestCardGame.test_init_invalid_argument_type_p1" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="WarGame" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -73,11 +66,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_Player.TestPlayer.test_get_card_invalid_length&quot;" />
+      <option name="_new_target" value="&quot;test_CardGame.TestCardGame.test_init_invalid_argument_type_p1&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_Player.TestPlayer.test_get_card_valid" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_CardGame.TestCardGame.test_init_invalid_argument_type_p2" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="WarGame" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -87,11 +80,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_Player.TestPlayer.test_get_card_valid&quot;" />
+      <option name="_new_target" value="&quot;test_CardGame.TestCardGame.test_init_invalid_argument_type_p2&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_CardGame.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_CardGame.TestCardGame.test_init_valid_argument_type" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="WarGame" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -101,11 +94,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/game_card/test_CardGame.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test_CardGame.TestCardGame.test_init_valid_argument_type&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_Player.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_CardGame.TestCardGame.test_new_game" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="WarGame" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -115,17 +108,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/game_card/test_Player.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test_CardGame.TestCardGame.test_new_game&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in test_CardGame.py" />
-        <item itemvalue="Python tests.Python tests for test_CardGame.TestCardGame.test_get_winner_valid_won" />
-        <item itemvalue="Python tests.Python tests in test_Player.py" />
-        <item itemvalue="Python tests.Python tests for test_Player.TestPlayer.test_get_card_invalid_length" />
-        <item itemvalue="Python tests.Python tests for test_Player.TestPlayer.test_get_card_valid" />
+        <item itemvalue="Python tests.Python tests for test_CardGame.TestCardGame.test_init_invalid_argument_type_p2" />
+        <item itemvalue="Python tests.Python tests for test_CardGame.TestCardGame.test_init_invalid_argument_type_p1" />
+        <item itemvalue="Python tests.Python tests for test_CardGame.TestCardGame.test_init_invalid_argument_type" />
+        <item itemvalue="Python tests.Python tests for test_CardGame.TestCardGame.test_new_game" />
+        <item itemvalue="Python tests.Python tests for test_CardGame.TestCardGame.test_init_valid_argument_type" />
       </list>
     </recent_temporary>
   </component>
@@ -229,35 +222,7 @@
       <option name="project" value="LOCAL‎" />
       <updated>1662577940199</updated>
     </task>
-    <task id="LOCAL‎-00014" summary="fix mistake in main">
-      <created>1662578373974</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL‎-00014" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1662578373974</updated>
-    </task>
-    <task id="LOCAL‎-00015" summary="fix mistake in main">
-      <created>1662578675294</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL‎-00015" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1662578675294</updated>
-    </task>
-    <task id="LOCAL‎-00016" summary="done to do unit test to Player.py object">
-      <created>1662623146052</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL‎-00016" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1662623146052</updated>
-    </task>
-    <task id="LOCAL‎-00017" summary="after review test_DeckOfCards.py">
-      <created>1662710414802</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL‎-00017" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1662710414802</updated>
-    </task>
-    <option name="localTasksCounter" value="18" />
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -289,9 +254,6 @@
     <MESSAGE value="after review all the objects" />
     <MESSAGE value="done with main.py" />
     <MESSAGE value="done to make test_Card.py" />
-    <MESSAGE value="fix mistake in main" />
-    <MESSAGE value="done to do unit test to Player.py object" />
-    <MESSAGE value="after review test_DeckOfCards.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="after review test_DeckOfCards.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="done to make test_Card.py" />
   </component>
 </project>
