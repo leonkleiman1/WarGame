@@ -10,6 +10,8 @@ class CardGame:
         # check if _num_per_player is correct type
         if type(_num_per_player) != int:
             raise TypeError("The argument must be integer!!!")
+        if type(_name_p1 and _name_p2) != str:
+            raise TypeError("The argument must be str!!!")
         # check if num_per_player between 10-26, if not change to 26
         if _num_per_player < 10 or _num_per_player > 26:
             _num_per_player = 26

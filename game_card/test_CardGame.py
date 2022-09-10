@@ -1,8 +1,9 @@
 # Unit Test for CardGame Object
-from unittest import TestCase
+from unittest import TestCase, mock
 from unittest.mock import patch
 from CardGame import CardGame  # Card Game Object
 from DeckOfCards import DeckOfCards  # Deck if cards Object
+from Player import Player
 
 
 class TestCardGame(TestCase):
@@ -68,8 +69,35 @@ class TestCardGame(TestCase):
         with self.assertRaises(ModuleNotFoundError):
             self.manager_game_15.new_game()
 
-    def test_new_game(self):
-        pass
+    # invalid type of num per player
+    def test_init_invalid_argument_type_num(self):
+        with self.assertRaises(TypeError):
+            manager_game = CardGame("oriel", "leon", "26")
+            self.manager_game.new_game()
+
+    # invalid type of name p1
+    def test_init_invalid_argument_type_p1(self):
+        with self.assertRaises(TypeError):
+            manager_game = CardGame(26, "leon", 26)
+            self.manager_game.new_game()
+
+    # invalid type of name p2
+    def test_init_invalid_argument_type_p2(self):
+        with self.assertRaises(TypeError):
+            manager_game = CardGame("leon", 26, 26)
+            self.manager_game.new_game()
+
+    # check if new_game called set_hand
+    def test_new_game_set_hand(self):
+        with patch('Player.Player.set_hand') as mock_set_hand:
+            manager_game = CardGame("oriel", "leon", 27)
+            mock_set_hand.assert_called()
+
+    # check if new_game called card_shuffle
+    def test_new_game_card_shuffle(self):
+        with patch("DeckOfCards.DeckOfCards.card_shuffle") as mock_card_shuffle:
+            manager_game = CardGame("oriel", "leon", 27)
+            mock_card_shuffle.assert_called()
 
     # check if equal return None
     def test_get_winner_valid_equal(self):
