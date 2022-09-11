@@ -60,6 +60,12 @@ class TestCard(TestCase):
         card_value_not_eq = Card(2, 3)
         self.assertFalse(self.card_object == card_value_not_eq)
 
+    # check if the type is not card
+    def test_eq_invalid_type(self):
+        with self.assertRaises(TypeError):
+            if self.card_object == 1:
+                pass
+
     # check if value of card is ace
     def test_gt_ace_value(self):
         card_with_ace = Card(1, 4)
@@ -77,6 +83,12 @@ class TestCard(TestCase):
         card_eq_value = Card(2, 3)
         self.assertTrue(self.card_object > card_eq_value)
         self.assertFalse(card_eq_value > self.card_object)
+
+    # check if the type is not card
+    def test_gt_invalid_type(self):
+        with self.assertRaises(TypeError):
+            if self.card_object > 1:
+                pass
 
     # check the card print
     def test_str(self):

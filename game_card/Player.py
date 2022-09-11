@@ -24,11 +24,16 @@ class Player:
         # check the type if is DeckOfCards
         if type(deck) != DeckOfCards:
             raise TypeError("The deck must be type of DeckOfCards!!!")
+        # check if the deck empty
+        if len(deck.deck) == 0:
+            return
         for card in range(self.num):
             self.cards_player.append(deck.deal_one())
 
     # method that get card from player deck from the index 0
     def get_card(self):
+        if len(self.cards_player) == 0:
+            return
         card = self.cards_player[0]
         self.cards_player.remove(card)
         return card

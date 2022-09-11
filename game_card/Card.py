@@ -19,6 +19,9 @@ class Card:
 
     # check if value of this card equal to value of card2
     def __eq__(self, card2):
+        # check the type
+        if type(card2) != Card:
+            raise TypeError("The argument is not Card!!!")
         if self.value == card2.value and self.suit == card2.suit:
             return True
         else:
@@ -26,6 +29,9 @@ class Card:
 
     # check which card is greater, if the value equal, according to the suit
     def __gt__(self, card2):
+        # check the type
+        if type(card2) != Card:
+            raise TypeError("The argument is not Card!!!")
         # check if card is ace
         if self.value == 1 and card2.value != 1:
             return True

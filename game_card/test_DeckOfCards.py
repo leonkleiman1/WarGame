@@ -40,6 +40,4 @@ class TestDeckOfCards(TestCase):
             self.deck_object.deal_one()
 
         self.assertEqual(len(self.deck_object.deck), 0)  # check the length of the deck
-        # check the function return error
-        with self.assertRaises(IndexError):
-            self.deck_object.deal_one()
+        self.assertEqual(self.deck_object.deal_one(), None)  # check the function return None

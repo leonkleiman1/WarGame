@@ -70,6 +70,13 @@ class TestPlayer(TestCase):
         with self.assertRaises(TypeError):
             self.player_dan_15.set_hand(12)
 
+    # check if the deck is empty
+    def test_set_hand_empty(self):
+        # empty the deck
+        for i in range(52):
+            self.deck_object.deal_one()
+        self.assertEqual(self.player_dan_15.set_hand(self.deck_object), None)
+
     # check the function get_card work
     def test_get_card_valid(self):
         self.player_dan_15.add_card(Card(1, 4))
@@ -80,8 +87,7 @@ class TestPlayer(TestCase):
 
     # check if the length of cards_player is 0
     def test_get_card_invalid_length(self):
-        with self.assertRaises(IndexError):
-            self.player_dan_15.get_card()
+        self.assertEqual(self.player_dan_15.get_card(), None)
 
     # check the function add_card work
     def test_add_card_valid(self):
