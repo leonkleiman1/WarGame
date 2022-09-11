@@ -5,6 +5,18 @@ from CardGame import CardGame
 # create 2 players for the game
 name_p1 = input("Enter name of player 1: ")
 name_p2 = input("Enter name of player 2: ")
+# input again if the names are empty
+while len(name_p1.split()) == 0:
+    print("Name of player 1 is empty!")
+    name_p1 = input("Enter name of player 1 again: ")
+while len(name_p2.split()) == 0:
+    print("Name of player 2 is empty!")
+    name_p2 = input("Enter name of player 2 again: ")
+# input again if the names are same
+while name_p1 == name_p2:
+    print("The names are same!")
+    name_p2 = input("Enter name of player 2 again: ")
+
 manager_game = CardGame(name_p1, name_p2)
 
 # print the players
