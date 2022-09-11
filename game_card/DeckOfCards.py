@@ -20,8 +20,6 @@ class DeckOfCards:
 
     # the function return random card from the deck and remove it
     def deal_one(self):
-        if len(self.deck) == 0:
-            return
         card_return = random.choice(self.deck)
         self.deck.remove(card_return)
         return card_return

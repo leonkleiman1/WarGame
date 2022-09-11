@@ -17,6 +17,7 @@ class TestCardGame(TestCase):
             self.assertEqual(manager_game.p1.name, "!@#name")
             self.assertEqual(manager_game.p2.name, "$%^name")
             self.assertEqual(manager_game.p1.num, 10)
+            self.assertEqual(manager_game.p2.num, 10)
             self.assertEqual(type(manager_game.deck), DeckOfCards)
             mock_new_game.assert_called()
         # check 25
@@ -25,6 +26,7 @@ class TestCardGame(TestCase):
             self.assertEqual(manager_game.p1.name, "!@#name")
             self.assertEqual(manager_game.p2.name, "$%^name")
             self.assertEqual(manager_game.p1.num, 25)
+            self.assertEqual(manager_game.p2.num, 25)
             self.assertEqual(type(manager_game.deck), DeckOfCards)
             mock_new_game.assert_called()
         # check default
@@ -33,6 +35,7 @@ class TestCardGame(TestCase):
             self.assertEqual(manager_game.p1.name, "!@#name")
             self.assertEqual(manager_game.p2.name, "$%^name")
             self.assertEqual(manager_game.p1.num, 26)
+            self.assertEqual(manager_game.p2.num, 26)
             self.assertEqual(type(manager_game.deck), DeckOfCards)
             mock_new_game.assert_called()
 
@@ -44,6 +47,7 @@ class TestCardGame(TestCase):
             self.assertEqual(manager_game.p1.name, "oriel")
             self.assertEqual(manager_game.p2.name, "leon")
             self.assertEqual(manager_game.p1.num, 26)
+            self.assertEqual(manager_game.p2.num, 26)
             self.assertEqual(type(manager_game.deck), DeckOfCards)
             mock_new_game.assert_called()
         # check negative number
@@ -52,6 +56,7 @@ class TestCardGame(TestCase):
             self.assertEqual(manager_game.p1.name, "oriel")
             self.assertEqual(manager_game.p2.name, "leon")
             self.assertEqual(manager_game.p1.num, 26)
+            self.assertEqual(manager_game.p2.num, 26)
             self.assertEqual(type(manager_game.deck), DeckOfCards)
             mock_new_game.assert_called()
         # check number above 26
@@ -60,6 +65,7 @@ class TestCardGame(TestCase):
             self.assertEqual(manager_game.p1.name, "oriel")
             self.assertEqual(manager_game.p2.name, "leon")
             self.assertEqual(manager_game.p1.num, 26)
+            self.assertEqual(manager_game.p2.num, 26)
             self.assertEqual(type(manager_game.deck), DeckOfCards)
             mock_new_game.assert_called()
 
